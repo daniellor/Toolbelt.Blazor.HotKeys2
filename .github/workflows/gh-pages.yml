@@ -20,7 +20,7 @@ jobs:
       - name: Install .NET WebAssembly Tools
         run: dotnet workload install wasm-tools
 
-      # Publish the site
+      # Publish the site 
       - name: Publish
         run: dotnet publish SampleSites/Client/SampleSite.Client.csproj -c:Release -o:public -p:GHPages=true -f:net7.0
 
